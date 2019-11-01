@@ -1,0 +1,16 @@
+  
+.logout:hover {
+    color: rgba(207, 34, 34, 0.75);
+    cursor: pointer;
+}
+.navbar{
+    justify-content: space-between;
+}
+.footer{
+    justify-content: space-between;
+    position: bottom;
+}
+
+span{
+    padding-right: 1rem;
+}

@@ -1,0 +1,32 @@
+<h3>
+   Lazy Loaded component works!
+</h3>
+
+<table  class="table table-hover" *ngIf=" userList.length; else userLoading">
+        <thead>
+            <tr>
+                <th  scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of userList" (click)="getClientDetail(client.id)">
+                <th scope="row">{{user.id}}</th>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                
+            </tr>
+        </tbody>
+    </table>
+
+    <button mat-button color="primary" disableRipple (click)="goBack()">go back</button>
+    
+    <ng-template #userLoading>
+      <div class="text-center">
+        <h4>Wait...</h4>
+        <h4>loading users....</h4>
+        <mat-spinner></mat-spinner>
+      </div>
+    </ng-template>
