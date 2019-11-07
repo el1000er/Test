@@ -1,2 +1,39 @@
-HOME!
-
+<mat-grid-list cols="2" rowHeight="1:1">
+        <mat-grid-tile>
+                <mat-card class="cars-card">
+                        <mat-card-header>
+                          <div mat-card-avatar class="cars-header-image"></div>
+                          <mat-card-title>Car fleet</mat-card-title>
+                          <mat-card-subtitle>Access to information of the fleet</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRwwYqFTnx5aM7A0uVibO_KaasLuuNZZPne6pBAtzzG_Bv71cIQQ&s" alt="Photo of Cars">
+                        <mat-card-content>
+                          <p>
+                            You will be able to see the list of cars, its history and availability
+                          </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                          <button mat-button href="#" [routerLink]="['/cars']" routerLinkActive="active"  >To cars!</button>    
+                                       
+                        </mat-card-actions>
+                      </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+             <mat-card class="customer-card">
+                <mat-card-header>
+                  <div mat-card-avatar class="customer-header-image"></div>
+                  <mat-card-title>Customers</mat-card-title>
+                  <mat-card-subtitle>Access Customers section</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="https://wp-static.gofundme.com/2018/01/03160720/people-talking-at-event-e1532735505404-2272x1158.jpg" alt="Photo of people">
+                <mat-card-content>
+                  <p>
+                    You will be able to add customers
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button [routerLink]="['/customers']" routerLinkActive="active" >To Customers!</button>                 
+                </mat-card-actions>
+              </mat-card>
+            </mat-grid-tile>       
+      </mat-grid-list>

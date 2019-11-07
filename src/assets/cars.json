@@ -1,0 +1,31 @@
+[{
+    "id": 1,
+    "mark": "Nissan",
+    "model": "Note",
+    "status": "Availabe",
+    "image": "https://m.media-amazon.com/images/I/71KbVRXqNHL._UY560_.jpg",
+    "rent": [{
+            "name": "Andrea",
+            "startDate": "11/12/2019",
+            "endDate": "11/19/2019"
+        },
+        {
+            "name": "Pepito",
+            "startDate": "11/20/2019",
+            "endDate": "11/25/2019"
+        }
+    ]
+},
+{
+    "id": 2,
+    "mark": "Toyota",
+    "model": "Corolla",
+    "status": "Not-Available",
+    "image": "https://s.aolcdn.com/dims-global/dims3/GLOB/legacy_thumbnail/640x400/quality/80/https://s.aolcdn.com/commerce/autodata/images/USD00TOC041B021001.jpg",
+    "rent": [{
+        "name": "Carlos",
+        "startDate": "11/19/2019",
+        "endDate": "11/25/2019"
+    }]
+}
+]

@@ -8,9 +8,24 @@
 }
 .footer{
     justify-content: space-between;
-    position: bottom;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    
+}
+.span {
+    margin: auto;
+    font-size: 0.75em;
 }
 
+.tool-text{
+    font-size: 10px;
+}
+
+.tool-text-welcome{
+    font-size: 16px;
+}
 span{
     padding-right: 1rem;
 }

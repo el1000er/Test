@@ -1,0 +1,21 @@
+mat-grid-tile {
+    background: rgb(231, 214, 58);
+  }
+
+  .cars-card {
+    max-width: 400px;
+  }
+  
+  .cars-header-image {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtuM0hV-K_XF_mG1RDIxljpvCy6Kha1_bD8afOXaTIMUcwCHDG&s');
+    background-size: cover;
+  }
+
+  .customer-card {
+    max-width: 400px;
+  }
+  
+  .customer-header-image {
+    background-image: url('https://risingman.s3.eu-west-1.amazonaws.com/store/504951a3c81668d9edd98e7500a1593a.jpg');
+    background-size: cover;
+  }

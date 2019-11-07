@@ -1,8 +1,14 @@
 import { NgModule } from '@angular/core';
 import{MatButtonModule,
-  MatProgressSpinnerModule,MatToolbarModule,MatCardModule} from  '@angular/material';
+  MatProgressSpinnerModule,
+  MatToolbarModule,
+  MatCardModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatGridListModule,MatDialogModule,
+} from  '@angular/material';
 
-import {MatFormFieldModule} from '@angular/material/form-field';
+
 import {MatTableModule} from '@angular/material/table';
 
 
@@ -13,6 +19,10 @@ const MaterialComponents = [
   MatTableModule,
   MatProgressSpinnerModule,
   MatToolbarModule,
+  MatInputModule,
+  MatGridListModule,
+  MatDialogModule,
+
  
 ];
 

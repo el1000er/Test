@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import{ReactiveFormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import {AppRoutingModule} from './app-routing.module';
@@ -12,6 +13,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import {MaterialModule} from './material/material.module';
 
+import{CustomersModule} from './customers/customers.module';
+import{CarsModule} from './cars/cars.module';
+import { CarsRoutingModule } from './cars/cars-routing.module';
+import { CustomersRoutingModule } from './customers/customers-routing.module';
+import {LoggedUserComponent} from './logged-user/logged-user.component';
+
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 
 @NgModule({
@@ -20,7 +30,9 @@ import {MaterialModule} from './material/material.module';
     
     LoginComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    LoggedUserComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -30,6 +42,13 @@ import {MaterialModule} from './material/material.module';
     AppRoutingModule,
     SharedModule,
     ServicesModule,
+    CarsRoutingModule,
+    CarsModule,
+    CustomersRoutingModule,
+    CustomersModule,
+    ReactiveFormsModule,
+    HttpClientModule
+    
     
     
     

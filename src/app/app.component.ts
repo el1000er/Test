@@ -13,10 +13,18 @@ export class AppComponent implements OnInit {
   userName: string;
   userList: User[] = [];
   activePage: string;
+  
+  public now: Date = new Date();//this is to show date, it works but didn't use it
 
+  today: number = Date.now();
   constructor(
     public authService: AuthService,
-    private router: Router) {
+    private router: Router) 
+
+    //this below is  to show date, it works but didn't use it
+    {
+      setInterval(()=> {this.now = new Date();
+      },1);
   }
 
   ngOnInit() {}
