@@ -5,7 +5,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import {HomeComponent} from './home/home.component';
 import {CarsModule} from './cars/cars.module';
 import {CustomersModule} from './customers/customers.module';
-import {CarsRoutingModule} from './cars/cars-routing.module';
+
 
 
 const routes: Routes = [

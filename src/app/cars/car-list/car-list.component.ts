@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Car} from "../../shared/car";
 import {CarService} from "../../services/car.service";
+import{Router} from '@angular/router';
 
 
 @Component({
@@ -12,7 +13,8 @@ export class CarListComponent implements OnInit {
 
   private cars: Car [];
 
-  constructor(private carService: CarService) { 
+carList:Car[]=[];//new
+  constructor(private carService: CarService, private router:Router) { 
 
    
 
@@ -21,6 +23,12 @@ export class CarListComponent implements OnInit {
   async ngOnInit() {
 
     this.cars = await this.carService.getCars();
+    this.carList =this.cars;
+  }
+
+  //new
+  getCarDetail(id: number): void {
+    this.router.navigate(['cars', id]);
   }
 
 }

@@ -1,7 +1,24 @@
 <h1>Car Detail</h1>
-<button mat-button color="primary" routerLink="/cars">Back</button>
 
-<div *ngIf="car" </div>>    
-  <div>Id: {{car.id}}</div>
-  <div>Name: {{car.Mark}}</div>
+<div *ngIf="loading; else carLoaded">
+  <div class="text-center">
+      <h4>Wait...</h4>
+      <h4>Loading Car {{carId}}</h4>
+  </div>
 </div>
+<ng-template #carLoaded>
+  <div class="content" *ngIf="carFound; else carNotFound">
+
+
+
+  <div>Id: {{car.id}}</div>
+  <div>Model: {{car.model}}</div>
+  <!--<div>Rent: {{car.rent | json}}</div>-->
+  <div *ngFor="let rent of car.rent">
+    <p>Rented by: {{rent.name}}</p>
+    <p>Rent Start Date: {{rent.startDate}}</p>
+    <p>Rent End Date: {{rent.endDate}}</p>
+  </div>
+</div>
+</ng-template>
+<button mat-button color="primary" routerLink="/cars">Back</button>

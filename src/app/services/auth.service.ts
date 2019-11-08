@@ -1,5 +1,6 @@
 import { Inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { identifierModuleUrl } from '@angular/compiler';
 
 
 @Inject('')
@@ -11,7 +12,8 @@ export class AuthService {
    * Login the user in the application
    */
   login(userName: string): void {
-    localStorage.setItem('user', userName);
+    localStorage.setItem('user', userName);  
+   
     this.router.navigate(['/home']);
   }
 
@@ -20,7 +22,8 @@ export class AuthService {
    * Logout the user
    */
   logout(): void {
-    localStorage.removeItem('user');
+    localStorage.removeItem('user'); 
+   
     this.router.navigate(['/login']);
   }
 

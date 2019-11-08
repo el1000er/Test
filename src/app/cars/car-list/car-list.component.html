@@ -8,25 +8,21 @@
     <th>Model</th>
     <th>Status</th>
     <th>Image</th>
+    <th>Rent Name</th>
   </tr>
   </thead>
   <tbody>
 
 
-  <tr *ngFor="let car of cars" >
+  <tr *ngFor="let car of cars"  >
     <td>{{car.id}}</td>
     <td>{{car.mark}}</td>
     <td>{{car.model}}</td>
     <td>{{car.status}}</td>
-    <td><img  src="{{car.image}}" alt="Pic" border=3 height=100 width=100></td>
-   
+    <td><img  src="{{car.image}}" alt="Pic" border=3 height=100 width=100></td>      
     
     <td><a routerLink="{{car.id}}">History Reservation</a></td>
-   
+   <!-- <button (click)="getCarDetail(car.id)">detail</button>-->
   </tr>
   </tbody>
 </table>
-
-
-
-

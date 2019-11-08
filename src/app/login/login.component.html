@@ -38,9 +38,10 @@
                                <div *ngIf="userName.errors['minlength']">
                                     Name must be at least 6 characters long.
                                </div>
-                            </div>
+                            </div>                           
                         
                         </div>
+                        
                         <button mat-button color="primary" disableRipple [disabled]="!userForm.form.valid" type="submit" class="btn btn-success btn-block">Enter</button>
                     </form>
                
@@ -53,7 +54,9 @@
 
 </div>
 
+<!--
 <input type ="text" [(ngModel)]="name"/>
-
 <p>{{name}}</p>
+-->
+
 </mat-card>
